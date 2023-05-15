@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="centrar">
+  <h1>Torres de Hanoi</h1>
+</div>
+<br>
+<div class="centrar">
+    <div id="t1" class="torre">
+        <div draggable="true" id="disco1" class="disco1"></div>
+        <div draggable="true" id="disco2" class="disco2"></div>
+        <div draggable="true" id="disco3" class="disco3"></div>
+        <div draggable="true" id="disco4" class="disco4"></div>
+        <div draggable="true" id="disco5" class="disco5"></div>
+        <div draggable="true" id="disco6" class="disco6"></div>
+    </div>
+
+    <div id="t2" class="torre"></div>
+    <div id="t3" class="torre"></div>
+</div>
+
+<div class="barra"></div>
+
+<br>
+<div class="centrarInicial">
+  <div class="datos">
+    <label for="username">Nombre:</label>
+    <input type="text" id="username" required>
+    <button onclick="iniciarConteo()">Iniciar Juego</button>
+  </div>
+</div>
+<br>
+<div class="centrar">
+  <p id="contador">0 segundos, 0 milisegundos</p>
+</div>
+
+<div id="lista" class="centraruna">
+  <h1>Puntuación</h1>
+  <table id="listaValores"></table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
