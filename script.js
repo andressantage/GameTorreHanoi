@@ -111,6 +111,9 @@ let milisegundos = 0;
 const registros = [];
 
 function iniciarConteo() {
+  const mostrar1 = document.querySelectorAll(".centrar");
+  mostrar1[0].style.display = "flex";
+  mostrar1[1].style.display = "flex";
   intervalo = setInterval(actualizarConteo, 10);
 }
 
@@ -218,7 +221,7 @@ function observarDivLleno() {
     const miDiv = document.getElementById("t3");
 
     const observer = new MutationObserver(() => {
-      if (miDiv.children.length === 1) {
+      if (miDiv.children.length === 6) {
         observer.disconnect();
         resolve();
       }
