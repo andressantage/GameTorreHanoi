@@ -111,9 +111,6 @@ let milisegundos = 0;
 const registros = [];
 
 function iniciarConteo() {
-  const mostrar1 = document.querySelectorAll(".centrar");
-  mostrar1[0].style.display = "flex";
-  mostrar1[1].style.display = "flex";
   intervalo = setInterval(actualizarConteo, 10);
 }
 
